@@ -1,10 +1,12 @@
 /* ---- NAVBAR ---- */
 
 .topnav {
-    background-color: rgba(0,0,0, 0.4);    position: fixed;
+    background-color: $secondary-color;    
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 5;
 }
 
 .topnav ul {
@@ -18,19 +20,14 @@
 }
 
 .topnav ul li a {
-    color: #ffffff;
+    color: $quinary-color;
     padding: 1.5em;
     text-decoration: none;
     display: none;
 }
 
 .topnav ul li a:hover {
-    background-color: hotpink;
-}
-
-
-.topnav ul li:first-child >a {
-    display: inline-block;
+    background-color: $quaternary-color;
 }
 
 #menu-icon {
@@ -49,11 +46,7 @@
 }
 
 .material-icons {
-    font-size: 0.9em;
-}
-
-.active {
-    background-color: coral;
+    font-size: 1em;
 }
 
 @media screen and (min-width: 700px) {
