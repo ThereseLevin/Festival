@@ -10,13 +10,14 @@
 <body>
     <div class="all">
         <header>
-            <nav>
+            <nav class="topnav" id="myTopnav">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Bultis</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Whacked fact</a></li>
+                    <li><a href="faq.html">Geek of the week</a></li>
+                    <li><a href="faq.html">Beak of the week</a></li>
+                    <li><a href="javascript:void(0);" id="menu-icon" onclick="navToggle()"><i class="material-icons">menu</i></a></li> 
+                    <!--JS till hamburgarmenyn/ onclick - function navToggle-->
                 </ul>
             </nav>
             <div class="otf-content">
@@ -31,5 +32,18 @@
             
         </footer>
     </div>
+    <script>
+        function navToggle() {
+            var x = document.getElementById("myTopnav");
+    
+            if (x.className === "topnav") {
+                x.className += " dropped";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    
+    </script>
 </body>
+
 </html>

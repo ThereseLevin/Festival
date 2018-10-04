@@ -1,25 +1,68 @@
 /* ---- NAVBAR ---- */
 
-nav {
-    position: fixed;
+.topnav {
+    background-color: rgba(0,0,0, 0.4);    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 1000;
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      li {
-        display: inline;
-        a {
-          display: inline-block;
-          padding: 1em;
-          text-decoration: none;
-        } & :hover {
-        }
-      }
+}
+
+.topnav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.topnav ul li {
+    display: inline;
+}
+
+.topnav ul li a {
+    color: #ffffff;
+    padding: 1.5em;
+    text-decoration: none;
+    display: none;
+}
+
+.topnav ul li a:hover {
+    background-color: hotpink;
+}
+
+
+.topnav ul li:first-child >a {
+    display: inline-block;
+}
+
+#menu-icon {
+    float: right;
+    display: block;
+}
+
+.topnav.dropped ul li a {
+    display: block;
+}
+
+.topnav.dropped #menu-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.material-icons {
+    font-size: 0.9em;
+}
+
+.active {
+    background-color: coral;
+}
+
+@media screen and (min-width: 700px) {
+
+    #menu-icon {
+        display: none;
     }
-  }
+
+    .topnav ul li a {
+        display: inline-block;
+    }
+}

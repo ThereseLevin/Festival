@@ -307,30 +307,66 @@ template {
 /* Fonts */
 /* Sizes */
 /* ---- NAVBAR ---- */
-nav {
+.topnav {
+  background-color: rgba(0, 0, 0, 0.4);
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  z-index: 1000; }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    nav ul li {
-      display: inline; }
-      nav ul li a {
-        display: inline-block;
-        padding: 1em;
-        text-decoration: none; }
+  top: 0;
+  left: 0; }
 
+.topnav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.topnav ul li {
+  display: inline; }
+
+.topnav ul li a {
+  color: #ffffff;
+  padding: 1.5em;
+  text-decoration: none;
+  display: none; }
+
+.topnav ul li a:hover {
+  background-color: hotpink; }
+
+.topnav ul li:first-child > a {
+  display: inline-block; }
+
+#menu-icon {
+  float: right;
+  display: block; }
+
+.topnav.dropped ul li a {
+  display: block; }
+
+.topnav.dropped #menu-icon {
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.material-icons {
+  font-size: 0.9em; }
+
+.active {
+  background-color: coral; }
+
+@media screen and (min-width: 700px) {
+  #menu-icon {
+    display: none; }
+
+  .topnav ul li a {
+    display: inline-block; } }
 header {
-  background-color: magenta;
+  background-color: #E5F121;
   width: 100%;
   height: 80vh; }
+  header h1 {
+    font-family: "Quicksand", sans-serif; }
+  header small {
+    font-family: "Oswald", sans-serif; }
+
+.otf-content {
+  text-align: center;
+  padding-top: 30vh; }
